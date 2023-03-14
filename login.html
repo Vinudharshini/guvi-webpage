@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="./css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap CSS -->
+<link href="./css/style.css" rel="stylesheet"><!-- Custom CSS -->
+<!-- Include Google font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,600">
+<!-- Include JavaScripts -->
+<script src="./js/jquery.min.js" async></script><!-- Load jquery -->
+<script src="./js/bootstrap.min.js" async></script><!-- Load bootstrap js -->
+<script src="./js/login.js" async></script><!-- Load custom js -->
+    </head>
+<div class="container">
+    <!-- HTML Form -->
+          <form action="login.php" method="post" name="login_form" id="login_form">
+            <h2 class="form-signin-heading">Login</h2>
+            <label for="Email" class="sr-only">Email address</label>
+            <input type="email" name="Email" id="Email" class="form-control" placeholder="Email address" required autofocus>
+            <br>
+            <label for="Password" class="sr-only">Password</label>
+            <input type="password" name="Password" id="Password" class="form-control" placeholder="Password" required pattern=".{6,12}" title="6 to 12 characters.">
+            <br>
+            <button type="submit" class="btn btn-lg btn-primary btn-block">Login</button>
+            </form>
+    <!-- /HTML Form -->
+</div>
